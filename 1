@@ -1,0 +1,25 @@
+//1)write a C program make a neon number ?
+
+#include<stdio.h>
+int main(){
+    int rem,num,sum=0,sq;
+    
+    printf("Enter number for check neon ");
+    scanf("%d",&num);
+    
+    
+    sq=num*num;
+  
+    while(sq != 0){
+        rem=sq%10;
+        sum=sum+rem;
+        sq=sq/10;
+    }
+    
+    if(sum == num){
+        printf("%d number is neon",num);
+    }else{
+        printf("%d number is not neon",num);
+    }
+    return 0;
+}

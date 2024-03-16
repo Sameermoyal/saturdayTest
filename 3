@@ -1,0 +1,22 @@
+//3)write a c program make a reverse number ?
+
+
+#include<stdio.h>
+int main(){
+    int rem,num,rev=0,orig;
+    
+    printf("Enter number for reverse number  ");
+    scanf("%d",&num);
+    orig=num;
+    
+    while(num != 0){
+        rem=num%10;
+        rev=rev*10+rem;
+        num=num/10;
+    }
+    
+    
+        printf("%d number is reverse number is %d",orig,rev);
+    
+    return 0;
+}

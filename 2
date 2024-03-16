@@ -1,0 +1,23 @@
+//2)write a C program make a armstrong number ?
+
+#include<stdio.h>
+int main(){
+    int rem,num,sum=0,orig;
+    
+    printf("Enter number for armstrong ");
+    scanf("%d",&num);
+    orig=num;
+    
+    while(num != 0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    
+    if(sum==orig){
+        printf("%d number is armstrong",orig);
+    }else{
+        printf("%d number is not armstrong",orig);
+    }
+    return 0;
+}
